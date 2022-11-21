@@ -1,12 +1,19 @@
 {
   "name": "frontend-project-1",
   "version": "1.0.0",
-  "type":"module",
+  "type": "module",
+  "bin": {
+    "Game": "bin/Game.js"
+  },
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Andrey",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "make": "^0.8.1",
+    "readline-sync": "^1.4.10"
+  }
 }
