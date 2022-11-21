@@ -17,13 +17,5 @@ const BotAnswer= () =>{
     return getRandomElement(0,answers.length-1,answers);
 }
 
-const UserScore = () =>{
-    let count = 0;
-    if (BotAnswer()){
-        count +=1
-        console.log(count);
-    }
-    return count;
-}
 
-export {UserHello,userAnswers,BotAnswer,UserScore};
+export {UserHello,userAnswers,BotAnswer};

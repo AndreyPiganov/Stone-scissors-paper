@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { UserHello,userAnswers,BotAnswer,UserScore } from "../src/welcome.js";
+import { UserHello,userAnswers,BotAnswer} from "../src/welcome.js";
 
 console.log('Welcome to the stone,scissors,paper game!');
 console.log(UserHello());
