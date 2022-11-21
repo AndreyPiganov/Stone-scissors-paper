@@ -4,6 +4,7 @@ import { UserHello,UserAnswers,BotAnswer} from "../src/welcome.js";
 console.log('Welcome to the stone,scissors,paper game!');
 console.log(UserHello());
 console.log('If you want to quit the game then write: exit or end.')
+console.log('The game ends when one of the players reaches 2 wins.')
 console.log('Lets start the game');
 let count = 0;
 while ((count <= 1) && (count >= -1)){   
@@ -67,9 +68,23 @@ console.log(text1);
             console.log('Game over!');
         }
     }
+    else if(array[array.length-1] === ' exit'){
+        console.log('Good bye!');
+        count += 11;
+    }
+    else if(array[array.length-1] === ' end'){
+        console.log('Good bye!')
+        count += 11;
+    }
     else{
         console.log('Something went wrong :(');
         count += 11;
+    }
+    if(count === 2){
+        console.log("You winner!!!");
+    }
+    else if(count === -2){
+        console.log("You loser!!!");
     }
 }
 
