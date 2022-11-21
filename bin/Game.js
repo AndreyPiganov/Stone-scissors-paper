@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { UserHello,userAnswers,BotAnswer} from "../src/welcome.js";
+import { UserHello,UserAnswers,BotAnswer} from "../src/welcome.js";
 
 console.log('Welcome to the stone,scissors,paper game!');
 console.log(UserHello());
@@ -8,10 +8,10 @@ console.log('Lets start the game');
 let count = 0;
 while (count <= 10){
 console.log('To begin, write: stone, scissors, or paper.');
-let text = 'Your answer: ' + userAnswers();
+let text = 'Your answer: ' + UserAnswers();
 let text1 = 'Bot answer: ' + BotAnswer();
 let array = text.split(':');
-let array1=text1.split(':');
+let array1= text1.split(':');
 console.log(text);
 console.log(text1);
     if(array[array.length-1] === array1[array.length-1]){

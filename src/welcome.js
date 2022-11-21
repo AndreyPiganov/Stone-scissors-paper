@@ -6,7 +6,7 @@ const UserHello = () =>{
     return Hello
 }
 
-const userAnswers = () =>{
+const UserAnswers = () =>{
     let answer = readlineSync.question('');
     return answer;
 }
@@ -18,4 +18,4 @@ const BotAnswer= () =>{
 }
 
 
-export {UserHello,userAnswers,BotAnswer};
+export {UserHello,UserAnswers,BotAnswer};
