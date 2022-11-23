@@ -23,44 +23,26 @@ while ((count <= 1) && (count >= -1)) {
     console.log('Victory!');
     count += 1;
     console.log(`Your score: ${count}`);
-    if ((count === 2) || (count === -2)) {
-      console.log('Game over!');
-    }
   } else if (array[array.length - 1] === ' stone' && array1[array.length - 1] === ' paper') {
     console.log('You lose!');
     count += -1;
     console.log(`Your score: ${count}`);
-    if ((count === 2) || (count === -2)) {
-      console.log('Game over!');
-    }
   } else if (array[array.length - 1] === ' paper' && array1[array.length - 1] === ' scissors') {
     console.log('You lose!');
     count += -1;
     console.log(`Your score: ${count}`);
-    if ((count === 2) || (count === -2)) {
-      console.log('Game over!');
-    }
   } else if (array[array.length - 1] === ' paper' && array1[array.length - 1] === ' stone') {
     console.log('Victory!');
     count += 1;
     console.log(`Your score: ${count}`);
-    if ((count === 2) || (count === -2)) {
-      console.log('Game over!');
-    }
   } else if (array[array.length - 1] === ' scissors' && array1[array.length - 1] === ' stone') {
     console.log('You lose!');
     count += -1;
     console.log(`Your score: ${count}`);
-    if ((count === 2) || (count === -2)) {
-      console.log('Game over!');
-    }
   } else if (array[array.length - 1] === ' scissors' && array1[array.length - 1] === ' paper') {
     console.log('Victory!');
     count += 1;
     console.log(`Your score: ${count}`);
-    if ((count === 2) || (count === -2)) {
-      console.log('Game over!');
-    }
   } else if (array[array.length - 1] === ' exit') {
     console.log('Good bye!');
     count += 11;
@@ -70,6 +52,9 @@ while ((count <= 1) && (count >= -1)) {
   } else {
     console.log('Something went wrong :(');
     count += 11;
+  }
+  if ((count === 2) || (count === -2)) {
+    console.log('Game over!');
   }
   if (count === 2) {
     console.log('You winner!!!');
