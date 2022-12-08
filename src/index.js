@@ -1,8 +1,7 @@
 import { UserAnswers, BotAnswer, startGame } from './helpers.js';
 
 startGame();
-const GameData = () => {
-  let count = 0;
+const GameData = (count) => {
   while (count <= 1 && count >= -1) {
     console.log('To begin, write: stone, scissors, or paper.');
     const text = `Your answer: ${UserAnswers()}`;

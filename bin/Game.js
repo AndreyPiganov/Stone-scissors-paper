@@ -2,4 +2,4 @@
 
 import GameData from '../src/index.js';
 
-GameData();
+GameData(0);
