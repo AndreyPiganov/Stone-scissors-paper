@@ -52,5 +52,5 @@ if (text === text1) {
 return GameData(count);
 }
 export {
-  UserHello, UserAnswers, BotAnswer, startGame, LogicGame,
+  startGame, LogicGame,
 };

@@ -1,4 +1,4 @@
-import { UserAnswers, BotAnswer, startGame, LogicGame } from './helpers.js';
+import { startGame,LogicGame } from './helpers.js';
 
 startGame();
 
