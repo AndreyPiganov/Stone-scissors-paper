@@ -23,7 +23,6 @@ const startGame = () => {
   console.log('The game ends when one of the players reaches 2 wins.');
   console.log('Lets start the game');
 };
-
 export {
   UserHello, UserAnswers, BotAnswer, startGame,
 };
