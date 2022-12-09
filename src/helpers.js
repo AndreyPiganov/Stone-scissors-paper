@@ -24,5 +24,5 @@ const startGame = () => {
   console.log('Lets start the game');
 };
 export {
-  UserHello, UserAnswers, BotAnswer, startGame,
+  UserHello, UserAnswers, BotAnswer, startGame
 };
