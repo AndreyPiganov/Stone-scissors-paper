@@ -40,9 +40,7 @@ if (text === text1) {
 } else if (text === 'scissors' && text1 === 'paper') {
   count += 1;
   console.log(`Victory!\nYour score: ${count}`);
-} else if (text === 'exit') {
-  count += 3;
-} else {
+}else {
   count += -1;
   console.log(`You lose!\nYour score: ${count}`);
 }
