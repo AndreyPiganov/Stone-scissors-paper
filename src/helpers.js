@@ -20,7 +20,6 @@ const BotAnswer = () => {
 const startGame = () => {
   console.log('Welcome to the stone,scissors,paper game!');
   console.log(UserHello());
-  console.log('If you want to quit the game then write: exit or end.');
   console.log('The game ends when one of the players reaches 2 wins.');
   console.log('Lets start the game');
 };
@@ -41,10 +40,6 @@ if (text === text1) {
 } else if (text === 'scissors' && text1 === 'paper') {
   count += 1;
   console.log(`Victory!\nYour score: ${count}`);
-} else if (text === 'exit') {
-  count += 3;
-} else if (text === 'end') {
-  count += 3;
 } else {
   count += -1;
   console.log(`You lose!\nYour score: ${count}`);
