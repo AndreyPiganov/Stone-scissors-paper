@@ -26,26 +26,24 @@ const startGame = () => {
 };
 const LogicGame = (count) => {
   console.log('To begin, write: stone, scissors, or paper.');
-  const text = `Your answer: ${UserAnswers()}`;
-  const text1 = `Bot answer: ${BotAnswer()}`;
-  const array = text.split(':');
-  const array1 = text1.split(':');
-  console.log(text);
-  console.log(text1);
-if (array[array.length - 1] === array1[array.length - 1]) {
+  const text = UserAnswers();
+  const text1 = BotAnswer();
+  console.log(`Your answer:${text}`);
+  console.log(`Bot answer:${text1}`);
+if (text === text1) {
   console.log(`Draw!\nYour score: ${count}`);
-} else if (array[array.length - 1] === ' stone' && array1[array.length - 1] === ' scissors') {
+} else if (text === 'stone' && text1 === 'scissors') {
   count += 1;
   console.log(`Victory!\nYour score: ${count}`);
-} else if (array[array.length - 1] === ' paper' && array1[array.length - 1] === ' stone') {
+} else if (text === 'paper' && text1 === 'stone') {
   count += 1;
   console.log(`Victory!\nYour score: ${count}`);
-} else if (array[array.length - 1] === ' scissors' && array1[array.length - 1] === ' paper') {
+} else if (text === 'scissors' && text1 === 'paper') {
   count += 1;
   console.log(`Victory!\nYour score: ${count}`);
-} else if (array[array.length - 1] === ' exit') {
+} else if (text === 'exit') {
   count += 3;
-} else if (array[array.length - 1] === ' end') {
+} else if (text === 'end') {
   count += 3;
 } else {
   count += -1;
